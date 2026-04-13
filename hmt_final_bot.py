@@ -60,10 +60,11 @@ options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--disable-gpu")
 
-driver = webdriver.Chrome(
-    service=Service(ChromeDriverManager().install()),
-    options=options
-)
+from selenium.webdriver.chrome.service import Service
+
+service = Service("/usr/bin/chromedriver")
+driver = webdriver.Chrome(service=service, options=options)
+
 
 print("🚀 RAILWAY BOT RUNNING...\n")
 
