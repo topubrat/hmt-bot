@@ -31,7 +31,7 @@ def send_alert(name, url, price=None):
         message = f"🔥 {name} IN STOCK!\n\n💰 {price}\n🔗 {url}"
 
         requests.post(
-            f"https://api.telegram.org/bot{8639793392:AAGnSFDqp5DDyAXz7zU7QTBXZUqjFBWXPY0}/sendMessage",
+            f"https://api.telegram.org/bot{"8639793392:AAGnSFDqp5DDyAXz7zU7QTBXZUqjFBWXPY0"}/sendMessage",
             data={"chat_id": "435115317", "text": message},
             timeout=10
         )
