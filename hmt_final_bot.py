@@ -8,8 +8,8 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 🔐 ENV VARIABLES (Railway)
-BOT_TOKEN = os.getenv(8639793392:AAGnSFDqp5DDyAXz7zU7QTBXZUqjFBWXPY0)
-CHAT_ID = os.getenv(435115317)
+BOT_TOKEN = "8639793392:AAGnSFDqp5DDyAXz7zU7QTBXZUqjFBWXPY0"
+CHAT_ID = "435115317"
 
 # 🔥 WATCH LIST
 WATCHES = {
